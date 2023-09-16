@@ -1,12 +1,6 @@
 <script lang="ts">
 	import 'reset-css';
-	import {
-		ArrowDownIcon,
-		NotificationIcon,
-		ReceiptIcon,
-		CartIcon,
-		TableIcon
-	} from '$lib/assets/index';
+	import { NotificationIcon, ReceiptIcon, CartIcon, TableIcon } from '../lib/assets/index';
 
 	const languages = [{ name: 'English' }, { name: '한국어' }];
 	const tableNumber = '12';
@@ -49,7 +43,9 @@
 		</ul>
 	</nav>
 </header>
-<slot />
+<main>
+	<slot />
+</main>
 
 <style lang="scss">
 	header {
@@ -94,6 +90,7 @@
 
 				&:disabled {
 					color: #858585;
+					cursor: not-allowed;
 				}
 
 				img {

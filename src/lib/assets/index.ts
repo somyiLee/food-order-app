@@ -3,4 +3,6 @@ import NotificationIcon from './notifications_active.png';
 import ReceiptIcon from './receipt.png';
 import CartIcon from './shopping_cart.png';
 import TableIcon from './table.png';
-export { ArrowDownIcon, NotificationIcon, ReceiptIcon, CartIcon, TableIcon };
+import PrevIcon from './prev.png';
+
+export { ArrowDownIcon, NotificationIcon, ReceiptIcon, CartIcon, TableIcon, PrevIcon };

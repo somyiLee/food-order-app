@@ -7,3 +7,11 @@ export interface MockCategories {
 		productOrder: string[];
 	};
 }
+
+export interface MockProduct {
+	description: string;
+	id: string;
+	name: string;
+	picture?: string;
+	price: number;
+}
