@@ -1,5 +1,7 @@
 <script lang="ts">
 	import type { MockCategories } from '../types';
+	import { moveToProducts } from './change-category-id';
+
 	const categoryOrder = [
 		'mockCategory01',
 		'mockCategory02',
@@ -136,21 +138,28 @@
 	};
 </script>
 
-<main>
-	<article>
-		<h2 class="screen-out">categories</h2>
-		<ul class="categorie-list">
-			{#each categoryOrder as categorie}
-				<li>
+<article>
+	<h2 class="screen-out">categories</h2>
+	<ul class="categorie-list">
+		{#each categoryOrder as categorie}
+			<li>
+				<button on:click={() => moveToProducts(categories[categorie].name)}>
 					<img src={categories[categorie].picture} alt={categories[categorie].name} />
 					<p class="categorie-title">{categories[categorie].name}</p>
-				</li>
-			{/each}
-		</ul>
-	</article>
-</main>
+				</button>
+			</li>
+		{/each}
+	</ul>
+</article>
 
 <style lang="scss">
+	button {
+		background: none;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+	}
+
 	.screen-out {
 		overflow: hidden;
 		position: absolute;
