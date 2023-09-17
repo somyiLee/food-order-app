@@ -8,7 +8,7 @@
 
 	const products = data.data;
 	const id = $page.params.products;
-	const productList: MockProduct[] = filterProductById<MockProduct>(products, id);
+	const productList: MockProduct[] = filterProductById<MockProduct>(data.data, id);
 </script>
 
 <article class="products-container">

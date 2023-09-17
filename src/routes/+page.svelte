@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { moveToProducts } from '$lib/utils';
 	import type { MockCategories } from '$lib/types';
+	import { categoryOrder } from '$lib/datas';
 	export let data;
 
-	const categoryOrder = data.categoryOrder;
-	const categoryList: MockCategories = data.categories;
+	let categoryList: MockCategories = data.data;
 </script>
 
 <article>
