@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { NotificationIcon, ReceiptIcon, CartIcon, TableIcon } from '../lib/assets/index';
+	import { NotificationIcon, ReceiptIcon, CartIcon, TableIcon } from '$lib/assets';
 	const languages = [{ name: 'English' }, { name: '한국어' }];
 	const tableNumber = '12';
 </script>

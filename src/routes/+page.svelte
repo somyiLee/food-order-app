@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { MockCategories } from '../types';
-	import { moveToProducts } from '$lib/utils/categories';
-	import { categories, categoryOrder } from '$lib/constants/categories';
+	import { moveToProducts } from '$lib/utils';
+	import type { MockCategories } from '$lib/types';
+	import { categories, categoryOrder } from '$lib/data';
 
 	let categoryList: MockCategories = categories;
 </script>
