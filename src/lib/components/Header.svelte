@@ -103,7 +103,7 @@
 		width: 100%;
 		height: 50px;
 		padding-left: 20px;
-		background: url('../lib/assets/chevron-down.png') calc(100% - 20px) no-repeat;
+		background: url('../assets/chevron-down.png') calc(100% - 20px) no-repeat;
 		background-color: #24201f;
 
 		outline: none;
