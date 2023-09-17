@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { PrevIcon } from '$lib/assets';
-	import { useNavigate } from '$lib/hooks/useNavigate';
 	import { page } from '$app/stores';
-	import type { MockProduct } from '../../types';
-	import { filterProductById, formatToDollar } from '$lib/utils/products';
-	import { products } from '$lib/constants/products';
+	import { useNavigate } from '$lib/hooks/useNavigate';
+	import { filterProductById, formatToDollar } from '$lib/utils';
+	import type { MockProduct } from '$lib/types';
+
+	import { PrevIcon } from '$lib/assets';
+	import { products } from '$lib/data';
 
 	const id = $page.params.products;
 	const productList: MockProduct[] = filterProductById<MockProduct>(products, id);
