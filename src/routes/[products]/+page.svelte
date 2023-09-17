@@ -3,12 +3,12 @@
 	import { useNavigate } from '$lib/hooks/useNavigate';
 	import { filterProductById, formatToDollar } from '$lib/utils';
 	import type { MockProduct } from '$lib/types';
-
 	import { PrevIcon } from '$lib/assets';
-	import { products } from '$lib/data';
+
+	export let data;
 
 	const id = $page.params.products;
-	const productList: MockProduct[] = filterProductById<MockProduct>(products, id);
+	const productList: MockProduct[] = filterProductById<MockProduct>(data.data, id);
 </script>
 
 <article class="products-container">
